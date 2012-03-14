@@ -1,0 +1,92 @@
+\documentclass[a4paper,11pt,english]{article}
+
+\usepackage[margin=1.5in,top=1.2in,bottom=1.4in]{geometry}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage[hyphens]{url}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage[breaklinks]{hyperref}
+\usepackage{framed} 
+\usepackage[ngerman]{translator}
+\usepackage{setspace}
+
+
+% Sans-Serif-Font
+\renewcommand{\familydefault}{\sfdefault}
+
+% kein Einzug in erster Zeile
+\setlength{\parindent}{0pt}
+
+% dafür etwas Abstand
+\setlength{\parskip}{5pt}
+
+\makeatletter
+\DeclareRobustCommand{\em}{%
+  \@nomath\em \if b\expandafter\@car\f@series\@nil
+  \normalfont \else \bfseries \fi}
+\makeatother
+
+\makeatletter
+\renewcommand{\maketitle}{
+	\begin{center}
+		\begin{spacing}{0.8}
+		\small
+		\@author
+		\end{spacing}\large
+		{\LARGE\@title}
+	\end{center}
+\@thanks}
+\makeatother
+
+% infobox
+\definecolor{boxBG}{rgb}{0.90,0.90,0.96}
+\makeatletter\newenvironment{infobox}{%
+   \begin{lrbox}{\@tempboxa}\begin{minipage}{\columnwidth}\footnotesize \emph{INFO:} }{\end{minipage}\end{lrbox}%
+   \colorbox{boxBG}{\hspace{0pt}\usebox{\@tempboxa}\hspace{0pt}}
+}\makeatother
+
+% Additional Options
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+\definecolor{grey}{rgb}{0.75,0.75,0.75}
+\definecolor{darkgrey}{rgb}{0.3,0.3,0.3}
+\definecolor{lightgrey}{rgb}{0.95,0.95,0.95}
+\definecolor{listingbg}{rgb}{0.90,0.96,0.90}
+
+\lstset{
+	language=Python,
+	basicstyle=\ttfamily,
+	keywordstyle=\color{javapurple}\bfseries,
+	stringstyle=\color{javared},
+	commentstyle=\color{javagreen},
+	morecomment=[s][\color{javadocblue}]{/**}{*/},
+	numbers=left,
+	numberstyle=\color{darkgrey},
+	stepnumber=1,
+	numbersep=10pt,
+	tabsize=4,
+	showspaces=false,
+	showstringspaces=false,
+	breaklines=true,
+	breakatwhitespace=false,
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	frame=l,
+	rulecolor=\color{javagreen},
+	columns=flexible,
+	backgroundcolor=\color{listingbg}
+}
+
+\hypersetup{
+	pdfborder=0 0 0,
+	pdffitwindow=false,    % window fit to page when opened
+	pdfstartview={FitH}    % fits the width of the page to the window  
+}

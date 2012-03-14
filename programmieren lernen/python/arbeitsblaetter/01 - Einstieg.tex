@@ -1,0 +1,71 @@
+\include{header}
+\include{glossary}
+
+\begin{document}
+	\title{Programmieren lernen mit Python\\1 – Einstieg}
+	\author{Chaos Computer Clup Mainz/Wiesbaden e.V.}
+	\maketitle
+	
+	\subsection*{Was ist Python?}
+	Python ist eine \emph{Programmiersprache}. Mit ihr kann man Programme schreiben, die der Computer dann versteht und ausführt. Das können kleine Spiele sein, aber auch richtig große Programme, wie zum Beispiel ein Programm um Texte zu schreiben.
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.5\textwidth]{img/python-logo.png}
+	\end{figure}
+	
+	\subsection*{Was brauch ich alles?}
+	Auf unseren Laptops ist Python schon installiert. Wenn du zuhause mit Python programmieren möchtest, kannst du auf \url{http://python.org/download/} eine Python-Version für dein Betriebssystem herunterladen und installieren. Wir benutzen hier \emph{Python 3} – das heißt, die Versionsnummer der Datei muss mit 3 beginnen, zum Beispiel \enquote{Python 3.2.2}.
+	
+	Wenn Python auf deinem Rechner installiert ist, kannst du das Programm \emph{IDLE} starten. IDLE ist eine sogenannte \emph{interaktive Entwicklungsumgebung}. Dabei sind Entwicklungsumgebungen dafür da, dass man seine Programme relativ einfach schreiben kann – ein bisschen wie ein Texteditor für Programmcode.
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{img/idle.jpg}
+		\caption{IDLE - die interaktive Entwicklungsumgebung für Python}
+		\label{IDLE}
+	\end{figure}
+	
+	\subsection*{Ich will Programmieren!}
+	Das Fenster, das du vor dir hast, wenn du IDLE öffnest ist die sogenannte \emph{Shell}. Hier kannst du schon einzelne Befehle an den Computer schicken, sodass er die dann ausführt. Tippe zum Beispiel mal \enquote{1+1} in das Fenster und drücke dann ENTER. Was passiert?
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{img/1plus1.jpg}
+		\caption{1+1 - der Befehl zum Ausrechnen}
+		\label{1plus1}
+	\end{figure}
+	
+	Du hast dem Computer gerade eine Rechenaufgabe gestellt und er hat sie für dich gelöst. Beim Programmieren werden solche Rechenaufgaben \emph{Ausdrücke} genannt. Dein Ausdruck war noch ziemlich einfach. Aber egal wie kompliziert der Ausdruck ist, der Computer wird immer versuchen, ihn auf einen einzigen Wert runter zu brechen. Das nennen Programmierer auch \enquote{\emph{einen Ausdruck evaluieren}}. 
+	
+	Probier mit der folgenden Tabelle doch auch mal kompliziertere Ausdrücke aus:
+	\begin{table}[htbp]
+		\centering
+		\normalsize
+		\begin{tabular}{|l|l|}
+			\hline
+				+ & 	addieren (Plus)	\\
+			\hline
+				- & 	subtrahieren (Minus)\\
+			\hline
+				* & 	multiplizieren (Mal)\\
+			\hline
+				/ & 	dividieren (Geteilt)\\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\subsection*{Noch mehr Befehle}
+	Die Python-Shell ist natürlich noch viel mehr als ein einfacher Taschenrechner. Hier sind noch mehr Ausdrücke, die du mal ausprobieren kannst. Hättest du die Ergebnisse erwartet? Gibt es auch Ausdrücke, die Python nicht versteht oder nicht ausrechnen kann?
+	
+	\begin{lstlisting}
+>>> 1+2+3+4+5
+>>> 1+5*5
+>>> (1+6)*5
+>>> 1.5-0.5
+>>> "Hallo"
+>>> "Hallo " + "Welt"
+>>> "Hallo " * 3
+	\end{lstlisting}
+	
+\end{document}
