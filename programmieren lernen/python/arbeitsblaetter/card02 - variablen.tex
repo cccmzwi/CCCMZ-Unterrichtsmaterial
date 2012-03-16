@@ -1,0 +1,51 @@
+\include{card_header}
+\include{glossary}
+
+\begin{document}
+	\begin{center}
+		\section*{\enquote{Variablen}}
+		\section*{Wie merke ich mir einen Wert?}	
+	\end{center}
+	
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.9\textwidth]{img/variablen.png}
+		\label{variablen}
+	\end{figure}
+	
+	
+	\newpage
+	
+	\begin{lstlisting}
+# 5 unter dem Namen "meinWert" merken
+meinWert = 5
+
+# "meinWert" ausgeben
+print(meinWert) # 5
+
+# "meinWert" verdoppeln
+meinWert = meinWert * 2
+print(meinWert) # 10
+
+# mit Variablen Rechnen:
+zweiterWert = 2
+ergebnis = meinwert + zweiterWert # 10 + 2
+print(ergebnis) # 12
+
+# geht auch mit Zeichenketten:
+meinWert = "Hallo"
+zweiterWert = "Welt!"
+print(meinWert) # Hallo
+print(zweiterWert) # Welt!
+print(meinWert + "..." + zweiterWert) # Hallo...Welt!
+
+# Wert einer Variablen in einer anderen Variablen speichern:
+hallo = meinWert
+print(meinWert) # Hallo
+print(hallo)  # Hallo
+	\end{lstlisting}
+	
+	
+	
+\end{document}

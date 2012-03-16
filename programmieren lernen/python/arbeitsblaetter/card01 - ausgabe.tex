@@ -1,0 +1,51 @@
+\include{card_header}
+\include{glossary}
+
+\begin{document}
+	\begin{center}
+		\section*{\enquote{Ausgabe}}
+		\section*{Wie spreche ich mit dem Benutzer?}	
+	\end{center}
+
+	\paragraph*{}
+	\paragraph*{}
+	
+	\begin{figure}[htbp]
+		\includegraphics[width=1\textwidth]{img/ausgabe.png}
+		\label{ausgabe}
+	\end{figure}
+	
+	\newpage
+	
+	
+	\paragraph*{}
+	\paragraph*{}
+	\begin{lstlisting}
+# Ausgaben macht man mit der print-Funktion
+print("Hallo?")
+print("Ich spreche!!!")
+
+# Zahlen gehen auch:
+print(123)
+
+# oder Kommazahlen:
+print(1.5)
+
+# innerhalb der Klammern könne auch 
+# komplizierte Ausdrücke stehen:
+print((1+2+3)*5)
+print("Hallo " + "Welt!")
+print("na"*10 + " Batman!")
+
+# Zeichenketten und Zahlen 
+# zusammen ausgeben:
+# - So gibt es einen Fehler:
+print(5 + " ist eine Zahl")
+# - So geht's richtig (Zahl zuerst 
+# in eine Zeichenkette umwandeln):
+print(str(5) + " ist eine Zahl") 
+	\end{lstlisting}
+	
+	
+	
+\end{document}

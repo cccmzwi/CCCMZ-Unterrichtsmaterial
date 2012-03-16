@@ -1,0 +1,52 @@
+\include{card_header}
+\include{glossary}
+
+\begin{document}
+	\begin{center}
+		\section*{\enquote{Eingabe}}
+		\section*{Wie höre ich dem Benutzer zu?}	
+	\end{center}
+	
+	\paragraph*{}
+	\paragraph*{}
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=1\textwidth]{img/eingabe.png}
+		\label{eingabe}
+	\end{figure}
+	
+	
+	\newpage
+	
+	\paragraph*{}
+	\begin{lstlisting}
+# den Benutzer mit der input-Funktion 
+# nach seinem Namen fragen und ihn
+# in der Variablen "name" speichern:
+print("Wie heißt du?")
+name = input()
+print("Hallo " + name + "!")
+
+# mit einer vom Benutzer eingebenen
+# Zahl rechnen:
+zahl = input() # Zeichenkette abfragen
+zahl = int(zahl) # in Zahl umwandeln
+print(zahl*2) # das Doppelte ausgeben
+
+# mit zwei vom Benutzer eingebenen
+# Zahlen rechnen:
+# - eingeben und rechnen:
+ersteZahl = int(input())
+zweiteZahl = int(input())
+ergebnis = ersteZahl+zweiteZahl;
+# - in Zeichenkette umwandeln und ausgeben
+ersteZahl = str(ersteZahl)
+zweiteZahl = str(zweiteZahl)
+ergebnis = str(ergebnis)
+print(ersteZahl + "+" + zweiteZahl + "=" + ergebnis)
+	\end{lstlisting}
+	
+	
+	
+\end{document}
