@@ -1,0 +1,54 @@
+\include{card_header}
+\include{glossary}
+
+\begin{document}
+	\begin{center}
+		\section*{\enquote{Zufall}}
+		\section*{Wie bekomme ich einen Zufallswert?}	
+	\end{center}
+	
+	\paragraph*{}
+	\paragraph*{}
+	\paragraph*{}
+	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.8\textwidth]{img/zufall.pdf}
+		\label{eingabe}
+	\end{figure}
+	
+	
+	\newpage
+	
+	\paragraph*{}
+	\begin{lstlisting}
+# die Zufallsfunktionen müssen erst 
+# importiert werden (wichtig!)
+import random
+
+# ein Würfel:
+# gibt eine ganze Zahl (ohne Komma)
+# zwischen 1 und einschließlich 6 aus
+print(random.randint(1, 6))
+
+# mehrmals werfen
+print(random.randint(1, 6))
+print(random.randint(1, 6))
+print(random.randint(1, 6))
+
+# gibt eine Kommazahl zwischen 0 
+# und (ausschließlich) 1 aus:
+print(random.random())
+
+# gibt eine Kommazahl zwischen 0 
+# und (ausschließlich) 50 aus:
+zufall = random.random()
+print(zufall * 50)
+
+# man kann auch zufällig ein Element  
+# (z.B. einen Namen) aus einer Liste holen:
+freunde = ["Tom", "Lisa", "Tina", "Nils"]
+einFreund = random.choice(freunde)
+print(einFreund)
+	\end{lstlisting}
+\end{document}
